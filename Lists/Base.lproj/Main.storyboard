@@ -31,7 +31,14 @@
                             <outlet property="delegate" destination="skw-bL-87V" id="JGA-h8-wa1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" title="ListS" id="iDd-o8-MWY"/>
+                    <navigationItem key="navigationItem" title="ListS" id="iDd-o8-MWY">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="COA-4O-6nO">
+                            <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                            <connections>
+                                <action selector="addButtonPressed:" destination="skw-bL-87V" id="l5N-FU-JZQ"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="PwO-IA-Mto" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
