@@ -8,6 +8,7 @@
 
 import UIKit
 import CoreData
+import RealmSwift
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
@@ -21,7 +22,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     }
 
     func applicationWillTerminate(_ application: UIApplication) {
-        
+        self.saveContext()
     }
 
     // MARK: - Core Data stack
